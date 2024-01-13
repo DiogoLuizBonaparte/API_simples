@@ -2,7 +2,9 @@
 
 namespace API.Infraestrutura
 {
-    public class ConnectionContext : DbContext
+    public class SQLContext : DbContext
     {
+        public SQLContext() { }
+        public SQLContext(DbContextOptions<SQLContext> options) : base(options) { }
     }
 }
